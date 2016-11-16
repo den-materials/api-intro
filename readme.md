@@ -182,7 +182,7 @@ A basic starter code `criminals_api` has been included in this repo.  You need t
 5. Run `node seed.js` (adds criminal data)
 6. Run `node app.js` (starts the API)
 
-Execute all the requests on the port indicated by the final `node` command above.
+Open Postman, and execute all the requests on the address indicated by the final `node` command above.
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
