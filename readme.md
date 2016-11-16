@@ -1,3 +1,7 @@
+<!--9:35 5 minutes -->
+
+<!--Hook: Today we will take our first dip into the back end.  Raise your hand if you can summarize our waiter/waitress analogy of APIs from week 1.  Today we will talk about that interface--how do we, on the front end, interact with the back end? -->
+
 # API and JSON Intro
 
 ## Learning Objectives
@@ -5,7 +9,7 @@
 - Explain why synchronous program execution is not conducive to the front-end.
 - Perform POST, PUT, and DELETE requests to an API to modify data.
 
-## Opening Framing (5/5)
+## Opening Framing
 
 ### PKI -
 Let's list out some technologies we've learned in this class thus far.
@@ -14,7 +18,9 @@ That is a tremendous amount of stuff. In the first couple of weeks we learned ho
 
 Think back to the first couple weeks of class, what's the difference between synchronous and asynchronous program execution? More importantly, what kind of things can we do with non-blocking asynchronous program execution?
 
-### T & T (10/15)
+<!--9:40 10 minutes -->
+
+### T & T
 Let's look at Google Maps. How would this site work with things not happening asynchronously?
 
 Turn and talk to you neighbor, why might synchronous programming not be effective for the front end? Consider how http requests work within your rails application.
@@ -65,7 +71,9 @@ There are **two** major serialized data formats...
 </users>
 ```
 
-## Where Do We Find APIs? (5 mins)
+<!--9:50 5 minutes -->
+
+## Where Do We Find APIs?
 
 APIs are published everywhere. Chances are good that most major content sources you follow online publish their data in some type of serialized format. Heck, [even Marvel publishes an API](http://developer.marvel.com/documentation/getting_started). Look around for a "Developers" section on major websites.
 
@@ -73,7 +81,9 @@ APIs are published everywhere. Chances are good that most major content sources 
 
 Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
 
-## What Is An API Key? (5 minutes / 0:25)
+<!--9:55 5 minutes -->
+
+## What Is An API Key?
 
 While the majority of APIs are free to use, many of them require an API "key" that identifies the developer requesting data access. This is done to regulate usage and prevent abuse. Some APIs also rate-limit developers, meaning they have caps on the free data allowed during a given time period.
 
@@ -97,6 +107,8 @@ You should see a really gigantic object/hash. It can be really intimidating at f
 
 Turns out, we can actually access this JSON object using Javascript!
 > JSON stands for Javascript Object Notation. JSON can come in a bunch of different ways. But at the end of the day, it's just an object/hash.
+
+<!--10:00 15 minutes -->
 
 ## Postman
 One tool that you can use to test APIs is Postman. Postman gives you a GUI access to the power of ``curl``. It's often a bit 
@@ -146,6 +158,8 @@ Our basic resource for this lab is the criminal object.
 	status: "deceased"
 }
 ```
+
+<!--10:15 35-40 minutes -->
 
 ## Requirements
 The goal for the lab is to run all of the requests listed above on the Criminals resource.
