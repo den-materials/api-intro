@@ -168,7 +168,7 @@ Our basic resource for this lab is the criminal object.
 
 <!--10:15 35-40 minutes -->
 
-<!-- Model the GET and POST -->
+<!-- Model every single one of these then turn over to them to test -->
 
 ## Requirements
 The goal for the lab is to run all of the requests listed above on the Criminals resource.
