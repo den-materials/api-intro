@@ -134,8 +134,8 @@ Show	| GET resource/:id		| Return a single resource with :id |
 Create	| POST resource/		| Create a resource |
 Update	| PUT resource/:id		| Update resource with :id | 
 Delete	| DELETE resource/:id	| Delete resource with :id |
-Edit	| GET resource/:id/edit	| Typically HTML only, form or information to update resource with :id |
-New		| GET resource/:id/new	| Typically HTML only, form of information to create resource |
+*Edit*	| GET resource/:id/edit	| *Typically HTML only*, form of information to update resource with :id |
+*New*	| GET resource/:id/new	| *Typically HTML only*, form of information to create resource |
 
 A RESTful API uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API may not use **all** of the routes, but if a functionality is present then it is accessed with the RESTful route. 
 
@@ -171,7 +171,7 @@ Our basic resource for this lab is the criminal object.
 <!-- Model every single one of these then turn over to them to test -->
 
 ## Requirements
-The goal for the lab is to run all of the requests listed above on the Criminals resource.
+The goal for the lab is to run the top 5 requests (all but the HTML-only ones) listed above on the Criminals resource.
 
 A basic starter code `criminals_api` has been included in this repo.  You need to start this endpoint by doing the following:
 
