@@ -164,7 +164,7 @@ Our basic resource for this lab is the criminal object.
 }
 ```
 
-<!--10:15 35-40 minutes -->
+<!--10:20 30-35 minutes -->
 
 <!-- Model every single one of these then turn over to them to test -->
 
