@@ -16,7 +16,7 @@ Let's list out some technologies we've learned in this class thus far.
 
 That is a tremendous amount of stuff. In the first couple of weeks we learned how to style a semantically structured HTML site with the ability to manipulate the DOM. Now, we're going to turn toward the back end.
 
-We will talk later about the difference between synchronous and asynchronous program execution? For now, let's describe them:
+We will talk later about the difference between synchronous and asynchronous program execution. For now, let's describe them briefly:
 
 - **Synchronous/Blocking**: each line of code finishes before moving on to the next line of code
 
@@ -29,9 +29,12 @@ More importantly, what kind of things can we do with non-blocking asynchronous p
 ### T & T
 Let's look at Google Maps. How would this site work with things not happening asynchronously?
 
-Turn and talk to you neighbor, why might synchronous programming not be effective for the front end? Consider how http requests work within your rails application.
+Turn and talk to you neighbor, why might synchronous programming not be effective for the front end? Consider how HTTP requests and page loads work within your webpage.
 
+<details>
+<summary>How does JS do this?</summary>
 We don't want to sit around and wait for code to execute before we load the rest of our script. It would be really nice if we could just describe what we want to happen when the code finally does execute, in a callback.
+</details>
 
 
 ### What is an API?
@@ -44,7 +47,7 @@ As we move into building single page applications, now is the perfect time to st
 
 ### What is Serialized Data? 
 
-All data sent via HTTP are strings. Unfortunately, what we really want to pass between web applications is **structured data** (i.e., arrays and hashes). Thus, native data structures can be **serialized** into a string representation of the data. This string can be transmitted and then parsed back into data by another web agent.  
+All data sent via HTTP are strings. Unfortunately, what we really want to pass between web applications is **structured data** (i.e. arrays and objects). To solve this problem, native data structures can be **serialized** into a string representation of the data. This string can be transmitted and then parsed back into the desired form by another web agent.  
 
 There are **two** major serialized data formats...  
 
@@ -87,7 +90,7 @@ APIs are published everywhere. Chances are good that most major content sources 
 
 Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
 
-<!--9:55 5 minutes -->
+<!--9:55 10 minutes -->
 
 ## What Is An API Key?
 
@@ -103,42 +106,26 @@ While the majority of APIs are free to use, many of them require an API "key" th
 
 > This is especially true when working with [Amazon Web Services (AWS)](https://aws.amazon.com/). Here's an example of a [stolen key horror story](https://wptavern.com/ryan-hellyers-aws-nightmare-leaked-access-keys-result-in-a-6000-bill-overnight).
 
-For the first part of this lesson we'll be using the [Weather Underground API](http://www.wunderground.com/weather/api/d/docs). **Follow the link and sign up for a key.**
+For the first part of this lesson we'll be using the [Weather Underground API](http://www.wunderground.com/weather/api/d/docs). 
 
-Once you're ready, follow this link. Check out the example in the middle of the page. You'll see a URL   that looks something like: `http://api.wunderground.com/api/your_key/conditions/q/CA/San_Francisco.json`
+1. Follow the link above.
+2. Sign up for an account by clicking the "Sign up for a key" link.
+3. Click the "Pricing" tab to "purchase" a free key.
+4. Use the key you created as `your_key` in the URL below.
+
+Once you're ready, test out the API. You'll use a URL that looks something like: `http://api.wunderground.com/api/your_key/conditions/q/CA/San_Francisco.json`
 > Replace `your_key` with your actual key and visit that URL.
-> If you're using the key provided in the lesson plan, we only have a rate limit of 500 so please don't over use!
+> If you're having trouble getting the API key set up, you can use your partner's, but be careful: they only have a rate limit of 500 so please don't over use!
 
 You should see a really gigantic object/hash. It can be really intimidating at first. But let's just start clicking around till we find some information we might want to display.
 
 Turns out, we can actually access this JSON object using Javascript!
 > JSON stands for Javascript Object Notation. JSON can come in a bunch of different ways. But at the end of the day, it's just an object/hash.
 
-<!--10:00 15 minutes -->
-
-## Postman
-One tool that you can use to test APIs is Postman. Postman gives you a GUI access to the power of ``curl``. It's often a bit 
-overkill for GET requests but it provides a nice interface for POST and PUT requests.
-
-### Installation
-You can download a native Mac version of [here](https://www.getpostman.com/app/postman-osx?utm_source=site&utm_medium=homepage&utm_campaign=macapp).
-
-To install just click the downloaded file to unzip it, click the file to open it and agree to install it.
-
-### Using Postman
-There are two main sections that you need to update in Postman, the headers section, and body section. 
-
-The header represents the additional information that your request is sending. The main header we will need is ``Content-Type``. This tells the server what type of data we're sending. The main values we'll use in this class is ``application/json``. 
-
-The body is the actual data your sending. I recommend using the raw option so that you completely understand what your sending. In 
-the raw section you can type in your JSON directly. You can also use the form option if your JSON doesn't include objects or arrays.
-
-### Collections
-Another major advantage of Postman is that you can store groups of requests into collections. A collection can be imported using the import button at the top of the screen. Once you import the collection you can make the requests in the collection just by clicking a button.
+<!--10:05 15 minutes -->
 
 ## REST
-REST is based around the concept of a Resource. A resource is just an object and a standardized set of URL routes for accessing 
-information around those objects. Here are the RESTful routes:
+REST is based around the concept of a Resource. A resource is just an object and a standardized set of URL routes for accessing information around those objects. Here are the RESTful routes:
 
 Name	| Format				| Meaning |
 --------|---------------------------------------|---------|------------------------|
@@ -150,9 +137,23 @@ Delete	| DELETE resource/:id	| Delete resource with :id |
 Edit	| GET resource/:id/edit	| Typically HTML only, form or information to update resource with :id |
 New		| GET resource/:id/new	| Typically HTML only, form of information to create resource |
 
-To say that an API is RESTful means that if the API implements functional that corresponds to a RESTful action it uses the RESTful 
-route. A RESTful API may not use all of the routes but if a functionality is present then it is accessed with the RESTful route. 
-There may be additional query parameters that help control the information that is returned.  REST APIs may have additional routes that are more specific to the resource if needed.
+A RESTful API uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API may not use **all** of the routes, but if a functionality is present then it is accessed with the RESTful route. 
+
+## Postman
+One tool that you can use to test APIs is Postman. Postman gives you a GUI access to the power of ``curl``. It's often a bit 
+overkill for GET requests but it provides a nice interface for POST and PUT requests.
+
+### Installation
+You can download a native Mac version of [here](https://www.getpostman.com/app/postman-osx?utm_source=site&utm_medium=homepage&utm_campaign=macapp).
+
+To install just click the downloaded file to unzip it, click the file to open it and agree to install it.
+
+### Using Postman
+There are two main sections that you need to update in Postman: the headers section, and body section. 
+
+The header represents the additional information that your request is sending. The main header we will need is ``Content-Type``. This tells the server what type of data we're sending. The main value we'll use in this class is ``application/json``. 
+
+The body is the actual data your sending. I recommend using the raw option so that you completely understand what you're sending. In the raw section you can type in your JSON directly. You can also use the form option if your JSON doesn't include objects or arrays.
 
 ### Criminals Resource
 Our basic resource for this lab is the criminal object. 
@@ -166,6 +167,8 @@ Our basic resource for this lab is the criminal object.
 ```
 
 <!--10:15 35-40 minutes -->
+
+<!-- Model the GET and POST -->
 
 ## Requirements
 The goal for the lab is to run all of the requests listed above on the Criminals resource.
