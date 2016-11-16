@@ -20,8 +20,8 @@ router.route('/criminals/:id')
   // GET return specific criminal 
   .get(criminalsController.getCriminal)
 
-  // PATCH update existing criminal
-  .patch(criminalsController.updateCriminal)
+  // PUT update existing criminal
+  .put(criminalsController.updateCriminal)
 
   // DELETE remove specific criminal from DB
   .delete(criminalsController.removeCriminal);
