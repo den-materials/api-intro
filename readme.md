@@ -134,8 +134,6 @@ Show	| GET resource/:id		| Return a single resource with :id |
 Create	| POST resource/		| Create a resource |
 Update	| PUT resource/:id		| Update resource with :id | 
 Delete	| DELETE resource/:id	| Delete resource with :id |
-Edit	| GET resource/:id/edit	| Typically HTML only, form or information to update resource with :id |
-New		| GET resource/:id/new	| Typically HTML only, form of information to create resource |
 
 A RESTful API uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API may not use **all** of the routes, but if a functionality is present then it is accessed with the RESTful route. 
 
@@ -166,12 +164,12 @@ Our basic resource for this lab is the criminal object.
 }
 ```
 
-<!--10:15 35-40 minutes -->
+<!--10:20 30-35 minutes -->
 
-<!-- Model the GET and POST -->
+<!-- Model every single one of these then turn over to them to test -->
 
 ## Requirements
-The goal for the lab is to run all of the requests listed above on the Criminals resource.
+The goal for the lab is to run the HTTP requests listed above on the Criminals resource.
 
 A basic starter code `criminals_api` has been included in this repo.  You need to start this endpoint by doing the following:
 
@@ -182,7 +180,7 @@ A basic starter code `criminals_api` has been included in this repo.  You need t
 5. Run `node seed.js` (adds criminal data)
 6. Run `node app.js` (starts the API)
 
-Execute all the requests on the port indicated by the final `node` command above.
+Open Postman, and execute all the requests on the address indicated by the final `node` command above.
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
