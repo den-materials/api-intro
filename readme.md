@@ -5,18 +5,24 @@
 # API and JSON Intro
 
 ## Learning Objectives
-- Explain the difference between synchronous and asynchronous program execution
-- Explain why synchronous program execution is not conducive to the front-end.
-- Perform POST, PUT, and DELETE requests to an API to modify data.
+- **Explain** the difference between synchronous and asynchronous program execution
+- **Explain** why synchronous program execution is not conducive to the front-end.
+- **Perform** POST, PUT, and DELETE requests to an API to modify data.
 
 ## Opening Framing
 
 ### PKI -
 Let's list out some technologies we've learned in this class thus far.
 
-That is a tremendous amount of stuff. In the first couple of weeks we learned how to style a semantically structured HTML site with the ability to manipulate the DOM. Now, we've been learning a lot about server-side requests and responses. Today we'll be tying these concepts together.
+That is a tremendous amount of stuff. In the first couple of weeks we learned how to style a semantically structured HTML site with the ability to manipulate the DOM. Now, we're going to turn toward the back end.
 
-Think back to the first couple weeks of class, what's the difference between synchronous and asynchronous program execution? More importantly, what kind of things can we do with non-blocking asynchronous program execution?
+We will talk later about the difference between synchronous and asynchronous program execution? For now, let's describe them:
+
+- **Synchronous/Blocking**: each line of code finishes before moving on to the next line of code
+
+- **Asynchronous/Non-Blocking**: each line of code does NOT finish before moving on to the next line of code
+
+More importantly, what kind of things can we do with non-blocking asynchronous program execution?
 
 <!--9:40 10 minutes -->
 
