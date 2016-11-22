@@ -2,6 +2,8 @@
 
 <!--Hook: Today we will take our first dip into the back end.  Raise your hand if you can summarize our waiter/waitress analogy of APIs from week 1.  Today we will talk about that interface--how do we, on the front end, interact with the back end? -->
 
+<!--You should just use heroku cats here (same API as next couple lessons), forget criminals -->
+
 # API and JSON Intro
 
 ## Learning Objectives
