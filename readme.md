@@ -12,11 +12,14 @@
 ## Opening Framing
 
 ### PKI -
+<!-- I just did this day before, but keeping it here for next cohort--
+
 Let's list out some technologies we've learned in this class thus far.
+-->
 
-That is a tremendous amount of stuff. In the first couple of weeks we learned how to style a semantically structured HTML site with the ability to manipulate the DOM. Now, we're going to turn toward the back end.
+We learned a tremendous amount of stuff in Unit 1. In the first couple of weeks we learned how to style a semantically structured HTML site with the ability to manipulate the DOM. Now, we're going to turn toward the back end.
 
-We will talk later about the difference between synchronous and asynchronous program execution. For now, let's describe them briefly:
+We will talk more later about the difference between synchronous and asynchronous program execution. For now, let's describe them briefly:
 
 - **Synchronous/Blocking**: each line of code finishes before moving on to the next line of code
 
@@ -26,7 +29,7 @@ More importantly, what kind of things can we do with non-blocking asynchronous p
 
 <!--9:40 10 minutes -->
 
-### T & T
+### Turn and Talk
 Let's look at Google Maps. How would this site work with things not happening asynchronously?
 
 Turn and talk to you neighbor, why might synchronous programming not be effective for the front end? Consider how HTTP requests and page loads work within your webpage.
@@ -36,14 +39,13 @@ Turn and talk to you neighbor, why might synchronous programming not be effectiv
 We don't want to sit around and wait for code to execute before we load the rest of our script. It would be really nice if we could just describe what we want to happen when the code finally does execute, in a callback.
 </details>
 
-
 ### What is an API?
 
 > Basically, an API is a service that provides raw data for public use.
 
 API stands for "Application Program Interface" and technically applies to all of software design. The DOM and jQuery are actually examples of APIs! Since the explosion of information technology, however, the term now commonly refers to web URLs that can be accessed for raw data.
 
-As we move into building single page applications, now is the perfect time to start understanding how to obtain data on the client side and then render it on the browser.
+As we move into building single-page applications, now is the perfect time to start understanding how to obtain data on the client side and then render it on the browser.
 
 ### What is Serialized Data? 
 
@@ -84,13 +86,13 @@ There are **two** major serialized data formats...
 
 ## Where Do We Find APIs?
 
-APIs are published everywhere. Chances are good that most major content sources you follow online publish their data in some type of serialized format. Heck, [even Marvel publishes an API](http://developer.marvel.com/documentation/getting_started). Look around for a "Developers" section on major websites.
+APIs are published everywhere. Chances are good that most major content sources you follow online publish their data in some type of serialized format. Heck, [even Marvel publishes an API](http://developer.marvel.com/documentation/getting_started). Look around for a "Developers" section on major websites to find more APIs.
 
 **That sounds hard. Can't you just give me a freebie?**
 
 Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
 
-<!--9:55 10 minutes -->
+<!--9:55 15 minutes -->
 
 ## What Is An API Key?
 
@@ -122,7 +124,7 @@ You should see a really gigantic object/hash. It can be really intimidating at f
 Turns out, we can actually access this JSON object using Javascript!
 > JSON stands for Javascript Object Notation. JSON can come in a bunch of different ways. But at the end of the day, it's just an object/hash.
 
-<!--10:05 15 minutes -->
+<!--10:10 15 minutes -->
 
 ## REST
 REST is based around the concept of a Resource. A resource is just an object and a standardized set of URL routes for accessing information around those objects. Here are the RESTful routes:
@@ -158,13 +160,13 @@ Our basic resource for this lab is the criminal object.
 
 ```javascript
 {
-  name: "Al Capone",
-  location: "Chicago",
-	status: "deceased"
+  "name": "Al Capone",
+  "location": "Chicago",
+  "status": "deceased"
 }
 ```
 
-<!--10:20 30-35 minutes -->
+<!--10:25 30-35 minutes -->
 
 <!-- Model every single one of these then turn over to them to test -->
 
