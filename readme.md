@@ -2,8 +2,6 @@
 
 <!--Hook: Today we will take our first dip into the back end.  Raise your hand if you can summarize our waiter/waitress analogy of APIs from week 1.  Today we will talk about that interface--how do we, on the front end, interact with the back end? -->
 
-<!--You should just use heroku cats here (same API as next couple lessons), forget criminals -->
-
 # API and JSON Intro
 
 ## Learning Objectives
@@ -157,14 +155,14 @@ The header represents the additional information that your request is sending. T
 
 The body is the actual data your sending. I recommend using the raw option so that you completely understand what you're sending. In the raw section you can type in your JSON directly. You can also use the form option if your JSON doesn't include objects or arrays.
 
-### Criminals Resource
-Our basic resource for this lab is the criminal object. 
+### Cats Resource
+Our basic resource for this lab is the cat object. 
 
 ```javascript
 {
-  "name": "Al Capone",
+  "name": "Al Capuss",
   "location": "Chicago",
-  "status": "deceased"
+  "status": "cute as a button"
 }
 ```
 
@@ -173,15 +171,16 @@ Our basic resource for this lab is the criminal object.
 <!-- Model every single one of these then turn over to them to test -->
 
 ## Requirements
-The goal for the lab is to run the HTTP requests listed above on the Criminals resource.
+The goal for the lab is to run the HTTP requests listed above on the Cats resource.
 
-A basic starter code `criminals_api` has been included in this repo.  You need to start this endpoint by doing the following:
+A basic starter code `cats_api` has been included in this repo.  You need to start this endpoint by doing the following:
 
 1. Clone this repo
-2. Navigate inside the `criminals_api` folder
+2. Navigate inside the `cats_api` folder
 3. Run `npm install` (installs dependencies)
 4. Run `mongod` (starts the database)
-5. Run `node seed.js` (adds criminal data)
+  1. *Note: this will start a process that you should *not* stop.  To continue, you should open a new tab.*
+5. Run `node seed.js` (adds cat data)
 6. Run `node app.js` (starts the API)
 
 Open Postman, and execute all the requests on the address indicated by the final `node` command above.
