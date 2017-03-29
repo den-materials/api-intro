@@ -1,3 +1,13 @@
+<!--Morning warm-up:
+
+1) Let's list out some technologies we've learned in this class thus far.
+2) Pull up progress slides (listing out what we've accomplished)
+3) Go through weekly goals
+4) Go through Full-stack diagram
+5) Highlight the part we're covering now
+
+-->
+
 <!--9:35 5 minutes -->
 
 <!--Hook: Today we will take our first dip into the back end.  Raise your hand if you can summarize our waiter/waitress analogy of APIs from week 1.  Today we will talk about that interface--how do we, on the front end, interact with the back end? -->
@@ -10,12 +20,6 @@
 - **Perform** POST, PUT, and DELETE requests to an API to modify data.
 
 ## Opening Framing
-
-### PKI -
-<!-- I just did this day before, but keeping it here for next cohort--
-
-Let's list out some technologies we've learned in this class thus far.
--->
 
 We learned a tremendous amount of stuff in Unit 1. In the first couple of weeks we learned how to style a semantically structured HTML site with the ability to manipulate the DOM. Now, we're going to turn toward the back end.
 
