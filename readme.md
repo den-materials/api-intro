@@ -1,10 +1,11 @@
 <!--Morning warm-up:
 
 1) Let's list out some technologies we've learned in this class thus far.
-2) Pull up progress slides (listing out what we've accomplished)
-3) Go through weekly goals
-4) Go through Full-stack diagram
-5) Highlight the part we're covering now
+2) Go through weekly goals from last unit
+3) Pull up progress slides (listing out what we've accomplished)
+4) Go through this week's goals
+5) Go through Full-stack diagram
+6) Highlight the part we're covering now
 
 -->
 
@@ -134,7 +135,7 @@ Turns out, we can actually access this JSON object using Javascript!
 REST is based around the concept of a Resource. A resource is just an object and a standardized set of URL routes for accessing information around those objects. Here are the RESTful routes:
 
 Name	| Format				| Meaning |
---------|---------------------------------------|---------|------------------------|
+--------|---------------------------------------|---------|
 Index	| GET resource/			| Return multiple, often all instances of the resource |
 Show	| GET resource/:id		| Return a single resource with :id |
 Create	| POST resource/		| Create a resource |
