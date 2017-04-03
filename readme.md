@@ -9,6 +9,7 @@
 
 -->
 
+<!--Actually 9:45 -->
 <!--9:35 5 minutes -->
 
 <!--Hook: Today we will take our first dip into the back end.  Raise your hand if you can summarize our waiter/waitress analogy of APIs from week 1.  Today we will talk about that interface--how do we, on the front end, interact with the back end? -->
@@ -31,6 +32,8 @@ We will talk more later about the difference between synchronous and asynchronou
 - **Asynchronous/Non-Blocking**: each line of code does NOT finish before moving on to the next line of code
 
 More importantly, what kind of things can we do with non-blocking asynchronous program execution?
+
+<!--Actually 9:50 WDI3-->
 
 <!--9:40 10 minutes -->
 
@@ -87,6 +90,8 @@ There are **two** major serialized data formats...
 </users>
 ```
 
+<!--10:03 -->
+
 <!--9:50 5 minutes -->
 
 ## Where Do We Find APIs?
@@ -97,6 +102,7 @@ APIs are published everywhere. Chances are good that most major content sources 
 
 Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
 
+<!--10:05 -->
 <!--9:55 15 minutes -->
 
 ## What Is An API Key?
@@ -129,6 +135,7 @@ You should see a really gigantic object/hash. It can be really intimidating at f
 Turns out, we can actually access this JSON object using Javascript!
 > JSON stands for Javascript Object Notation. JSON can come in a bunch of different ways. But at the end of the day, it's just an object/hash.
 
+<!--10:19-->
 <!--10:10 15 minutes -->
 
 ## REST
@@ -171,6 +178,7 @@ Our basic resource for this lab is the cat object.
 }
 ```
 
+<!--10:34, 10:43 after modeling -->
 <!--10:25 30-35 minutes -->
 
 <!-- Model every single one of these then turn over to them to test -->
@@ -189,6 +197,10 @@ A basic starter code `cats_api` has been included in this repo.  You need to sta
 6. Run `node app.js` (starts the API)
 
 Open Postman, and execute all the requests on the address indicated by the final `node` command above.
+<!--Need to make this clearer that they will run GET, POST, PUT, and DELETE -->
+
+
+<!--Actually 11:07 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
