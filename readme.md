@@ -126,6 +126,8 @@ For the first part of this lesson we'll be using the [Weather Underground API](h
 3. Click the "Pricing" tab to "purchase" a free key.
 4. Use the key you created as `your_key` in the URL below.
 
+<!--These are not the full steps--folks need to sign up first (the steps above take them through this process), but THEN they still need to click "Pricing", and it will take them through the Purchase Key workflow...so weird-->
+
 Once you're ready, test out the API. You'll use a URL that looks something like: `http://api.wunderground.com/api/your_key/conditions/q/CA/San_Francisco.json`
 > Replace `your_key` with your actual key and visit that URL.
 > If you're having trouble getting the API key set up, you can use your partner's, but be careful: they only have a rate limit of 500 so please don't over use!
