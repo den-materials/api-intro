@@ -153,6 +153,8 @@ Delete	| DELETE resource/:id	| Delete resource with :id |
 
 A RESTful API uses HTTP requests to GET, PUT, POST and DELETE data. A RESTful API may not use **all** of the routes, but if a functionality is present then it is accessed with the RESTful route. 
 
+<!--Need to go really slow through this and wait for everyone to make a successful request before moving on -->
+
 ## Postman
 One tool that you can use to test APIs is Postman. Postman gives you a GUI access to the power of ``curl``. It's often a bit 
 overkill for GET requests but it provides a nice interface for POST and PUT requests.
