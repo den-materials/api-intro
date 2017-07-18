@@ -9,6 +9,7 @@
 
 -->
 
+<!--WDI4 9:25 -->
 <!--Actually 9:45 -->
 <!--9:35 5 minutes -->
 
@@ -41,6 +42,8 @@ More importantly, what kind of things can we do with non-blocking asynchronous p
 Let's look at Google Maps. How would this site work with things not happening asynchronously?
 
 Turn and talk to you neighbor, why might synchronous programming not be effective for the front end? Consider how HTTP requests and page loads work within your webpage.
+
+<!--WDI4 9:29 after turning over to devs -->
 
 <details>
 <summary>How does JS do this?</summary>
@@ -93,6 +96,7 @@ There are **two** major serialized data formats...
 <!--10:03 -->
 
 <!--9:50 5 minutes -->
+<!--9:44 WDI4 -->
 
 ## Where Do We Find APIs?
 
@@ -103,6 +107,7 @@ APIs are published everywhere. Chances are good that most major content sources 
 Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
 
 <!--10:05 -->
+<!--9:46 WDI4 -->
 <!--9:55 15 minutes -->
 
 ## What Is An API Key?
@@ -119,12 +124,19 @@ While the majority of APIs are free to use, many of them require an API "key" th
 
 > This is especially true when working with [Amazon Web Services (AWS)](https://aws.amazon.com/). Here's an example of a [stolen key horror story](https://wptavern.com/ryan-hellyers-aws-nightmare-leaked-access-keys-result-in-a-6000-bill-overnight).
 
+<!--WDI4 9:56 -->
+
 For the first part of this lesson we'll be using the [Weather Underground API](http://www.wunderground.com/weather/api/d/docs). 
 
-1. Follow the link above.
-2. Sign up for an account by clicking the "Sign up for a key" link.
-3. Click the "Pricing" tab to "purchase" a free key.
-4. Use the key you created as `your_key` in the URL below.
+1. Go to [Weather Underground](http://www.wunderground.com)
+2. Sign up for an account by clicking the "Join" link at the top right and following the steps.
+3. Wait a few seconds, then check your email for a Verification email of Weather Underground.  You may need to check your spam or other folders.
+4. Click the "Validate Your Email" button.
+5. Return to [Weather Underground](http://www.wunderground.com)
+6. Click the "More" dropdown and select "Weather API for Developers" near the bottom of the dropdown.
+7. Click the "Pricing" tab to "purchase" a free key and follow the steps.
+  - You may need to refresh the page if it claims you have not validated your email yet.
+8. Use the key you created as `your_key` in the URL below.
 
 <!--These are not the full steps--folks need to sign up first (the steps above take them through this process), but THEN they still need to click "Pricing", and it will take them through the Purchase Key workflow...so weird-->
 
