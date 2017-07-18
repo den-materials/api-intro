@@ -150,6 +150,7 @@ Turns out, we can actually access this JSON object using Javascript!
 > JSON stands for Javascript Object Notation. JSON can come in a bunch of different ways. But at the end of the day, it's just an object/hash.
 
 <!--10:19-->
+<!--WDI4 10:11 -->
 <!--10:10 15 minutes -->
 
 ## REST
@@ -175,6 +176,8 @@ overkill for GET requests but it provides a nice interface for POST and PUT requ
 You can download a native Mac version of [here](https://www.getpostman.com/app/postman-osx?utm_source=site&utm_medium=homepage&utm_campaign=macapp).
 
 To install just click the downloaded file to unzip it, click the file to open it and agree to install it.
+
+<!--10:22 WDI4 -->
 
 ### Using Postman
 There are two main sections that you need to update in Postman: the headers section, and body section. 
@@ -215,8 +218,9 @@ A basic starter code `cats_api` has been included in this repo.  You need to sta
 Open Postman, and execute all the requests on the address indicated by the final `node` command above.
 <!--Need to make this clearer that they will run GET, POST, PUT, and DELETE -->
 
-
+<!--We need to change the attributes here to match GA Cat Rescue, so 
 <!--Actually 11:07 -->
+<!--11:17 WDI4 but wanted to go through a lot slower and make sure everybody grasped all the concepts this time-->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
