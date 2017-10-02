@@ -41,8 +41,8 @@ function updateCat(request, response) {
     if(error) response.json({message: 'Could not find cat b/c:' + error});
 
     if(request.body.name) cat.name = request.body.name;
-    if(request.body.location) cat.location = request.body.location;
-    if(request.body.status) cat.status = request.body.status;
+    if(request.body.note) cat.note = request.body.note;
+    if(request.body.image) cat.image = request.body.image;
 
     cat.save(function(error) {
       if(error) response.json({messsage: 'Could not update cat b/c:' + error});
