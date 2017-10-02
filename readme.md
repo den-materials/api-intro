@@ -200,6 +200,7 @@ Our basic resource for this lab is the cat object.
 ```
 
 <!--10:34, 10:43 after modeling -->
+<!--WDI5 10:26 turning over to devs (had to fix a couple things -->
 <!--10:25 30-35 minutes -->
 
 <!-- Model every single one of these then turn over to them to test -->
@@ -225,6 +226,7 @@ Open Postman, and execute all the requests on the address indicated by the final
 <!--We need to change the attributes here to match GA Cat Rescue, so 
 <!--Actually 11:07 -->
 <!--11:17 WDI4 but wanted to go through a lot slower and make sure everybody grasped all the concepts this time-->
+<!--WDI5 Ending 10:47 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
