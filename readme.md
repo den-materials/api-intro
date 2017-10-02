@@ -9,6 +9,7 @@
 
 -->
 
+<!--WDI5 9:16 -->
 <!--WDI4 9:25 -->
 <!--Actually 9:45 -->
 <!--9:35 5 minutes -->
@@ -106,6 +107,7 @@ APIs are published everywhere. Chances are good that most major content sources 
 
 Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
 
+<!--WDI5 9:36 -->
 <!--10:05 -->
 <!--9:46 WDI4 -->
 <!--9:55 15 minutes -->
@@ -192,8 +194,8 @@ Our basic resource for this lab is the cat object.
 ```javascript
 {
   "name": "Al Capuss",
-  "location": "Chicago",
-  "status": "cute as a button"
+  "note": "cute as a button",
+  "image": null
 }
 ```
 
