@@ -215,7 +215,9 @@ A basic starter code `cats_api` has been included in this repo.  You need to sta
 5. Run `node seed.js` (adds cat data)
 6. Run `node app.js` (starts the API)
 
-Open Postman, and execute all the requests on the address indicated by the final `node` command above.
+Navigate to the address indicated by the final `node` command's output in your browser.  You should see something like `Cannot GET /`.  That's because this API doesn't have a homepage.  Add `/cats` to the end of the address, and you should see some cats.
+
+Open Postman, and execute all the requests on the address indicated by the final `node` command's output.
 <!--Need to make this clearer that they will run GET, POST, PUT, and DELETE -->
 
 <!--We need to change the attributes here to match GA Cat Rescue, so 
