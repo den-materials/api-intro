@@ -105,7 +105,7 @@ APIs are published everywhere. Chances are good that most major content sources 
 
 **That sounds hard. Can't you just give me a freebie?**
 
-Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](http://www.publicapis.com/).
+Try the [Programmable Web API Directory](http://www.programmableweb.com/apis/directory) or the [Public APIs Directory](https://public.apis.zone/).
 
 <!--WDI5 9:36 -->
 <!--10:05 -->
