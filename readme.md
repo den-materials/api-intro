@@ -188,15 +188,18 @@ The header represents the additional information that your request is sending. T
 
 The body is the actual data your sending. I recommend using the raw option so that you completely understand what you're sending. In the raw section you can type in your JSON directly. You can also use the form option if your JSON doesn't include objects or arrays.
 
-### Cats Resource
-Our basic resource for this lab is the cat object. 
+### Books Resource
+Our basic resource for this lab is the book object. 
 
 ```javascript
-{
-  "name": "Al Capuss",
-  "note": "cute as a button",
-  "image": null
-}
+    {
+      _id: "563970891719c56cac83e5bb",
+      title: "Around the World in 80 Days",
+      author: "Jules Verne",
+      image: "https://cloud.githubusercontent.com/assets/7833470/10892118/865bee3e-8156-11e5-9634-cd7bcd3d6d4f.jpg",
+      releaseDate: "January 30, 1873",
+      __v: 0
+    }
 ```
 
 <!--10:34, 10:43 after modeling -->
@@ -206,24 +209,22 @@ Our basic resource for this lab is the cat object.
 <!-- Model every single one of these then turn over to them to test -->
 
 ## Requirements
-The goal for the lab is to run the HTTP requests listed above on the Cats resource.
+The goal for the lab is to run the HTTP requests listed above on the Books resource.
 
-A basic starter code `cats_api` has been included in this repo.  You need to start this endpoint by doing the following:
+Navigate to https://super-crud.herokuapp.com/.  You should see something like `Welcome to Super CRUD`.  That's because this the API's homepage.  Add `/books` to the end of the address, and you should see some books.
 
-1. Clone this repo
-2. Navigate inside the `cats_api` folder
-3. Run `npm install` (installs dependencies)
-4. Run `mongod` (starts the database)
-  1. *Note: this will start a process that you should *not* stop.  To continue, you should open a new tab.*
-5. Run `node seed.js` (adds cat data)
-6. Run `node app.js` (starts the API)
+Open Postman, and execute the following requests on https://super-crud.herokuapp.com/books:
 
-Navigate to the address indicated by the final `node` command's output in your browser.  You should see something like `Cannot GET /`.  That's because this API doesn't have a homepage.  Add `/cats` to the end of the address, and you should see some cats.
+1. `Index` to show *all* the books.
+2. `Show` to show *one* book.
+3. `Create` to add a new book.
+4. `Update` to update the book you just added with a new property value.
+5. `Delete` to delete the book you just added.
 
-Open Postman, and execute all the requests on the address indicated by the final `node` command's output.
-<!--Need to make this clearer that they will run GET, POST, PUT, and DELETE -->
+**DO NOT DELETE SOMEONE ELSE'S BOOK**, that's just mean.
 
-<!--We need to change the attributes here to match GA Cat Rescue, so 
+If you are not sure what URL to use on the `/books` API endpoint check the table with all these routes earlier in this lesson.
+
 <!--Actually 11:07 -->
 <!--11:17 WDI4 but wanted to go through a lot slower and make sure everybody grasped all the concepts this time-->
 <!--WDI5 Ending 10:47 -->
