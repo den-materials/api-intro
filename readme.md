@@ -11,6 +11,7 @@
 
 <!--WDI5 9:16 -->
 <!--WDI4 9:25 -->
+<!--WDI6 9:24 after coming back from break -->
 <!--Actually 9:45 -->
 <!--9:35 5 minutes -->
 
@@ -44,6 +45,7 @@ Let's look at Google Maps. How would this site work with things not happening as
 
 Turn and talk to you neighbor, why might synchronous programming not be effective for the front end? Consider how HTTP requests and page loads work within your webpage.
 
+<!--WDI6 9:30 turning over to devs -->
 <!--WDI4 9:29 after turning over to devs -->
 
 <details>
@@ -98,6 +100,7 @@ There are **two** major serialized data formats...
 
 <!--9:50 5 minutes -->
 <!--9:44 WDI4 -->
+<!--WDI6 9:43 -->
 
 ## Where Do We Find APIs?
 
@@ -153,6 +156,7 @@ Turns out, we can actually access this JSON object using Javascript!
 
 <!--10:19-->
 <!--WDI4 10:11 -->
+<!--WDI6 10:05 -->
 <!--10:10 15 minutes -->
 
 ## REST
@@ -207,6 +211,7 @@ Our basic resource for this lab is the book object.
 <!--10:25 30-35 minutes -->
 
 <!-- Model every single one of these then turn over to them to test -->
+<!--WDI6 10:30, students brought down the server by posting invalid data -->
 
 ## Requirements
 The goal for the lab is to run the HTTP requests listed above on the Books resource.
