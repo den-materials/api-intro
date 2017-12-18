@@ -196,14 +196,14 @@ The body is the actual data your sending. I recommend using the raw option so th
 Our basic resource for this lab is the book object. 
 
 ```javascript
-    {
-      _id: "563970891719c56cac83e5bb",
-      title: "Around the World in 80 Days",
-      author: "Jules Verne",
-      image: "https://cloud.githubusercontent.com/assets/7833470/10892118/865bee3e-8156-11e5-9634-cd7bcd3d6d4f.jpg",
-      releaseDate: "January 30, 1873",
-      __v: 0
-    }
+  {
+            "_id": "5a380025eeb8890014317349",
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "image": "https://cloud.githubusercontent.com/assets/7833470/10892120/866ce1c6-8156-11e5-9bfd-ef729d98a408.jpg",
+            "releaseDate": "April 10, 1925",
+            "__v": 0
+  }
 ```
 
 <!--10:34, 10:43 after modeling -->
@@ -211,7 +211,7 @@ Our basic resource for this lab is the book object.
 <!--10:25 30-35 minutes -->
 
 <!-- Model every single one of these then turn over to them to test -->
-<!--WDI6 10:30, students brought down the server by posting invalid data -->
+<!--WDI6 10:30, students brought down the server by posting invalid data, took a break -->
 
 ## Requirements
 The goal for the lab is to run the HTTP requests listed above on the Books resource.
@@ -233,6 +233,7 @@ If you are not sure what URL to use on the `/books` API endpoint check the table
 <!--Actually 11:07 -->
 <!--11:17 WDI4 but wanted to go through a lot slower and make sure everybody grasped all the concepts this time-->
 <!--WDI5 Ending 10:47 -->
+<!--WDI6 Ended 11:15 -->
 
 ## Licensing
 All content is licensed under a CC­BY­NC­SA 4.0 license.
