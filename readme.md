@@ -216,9 +216,9 @@ Our basic resource for this lab is the book object.
 ## Requirements
 The goal for the lab is to run the HTTP requests listed above on the Books resource.
 
-Navigate to https://super-crud.herokuapp.com/.  You should see something like `Welcome to Super CRUD`.  That's because this the API's homepage.  Add `/books` to the end of the address, and you should see some books.
+Navigate to https://den-super-crud.herokuapp.com.  You should see something like `Welcome to Super CRUD`.  That's because this the API's homepage.  Add `/books` to the end of the address, and you should see some books.
 
-Open Postman, and execute the following requests on https://super-crud.herokuapp.com/books:
+Open Postman, and execute the following requests on https://den-super-crud.herokuapp.com/books:
 
 1. `Index` to show *all* the books.
 2. `Show` to show *one* book.
